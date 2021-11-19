@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center">
-    <el-table :data="tableData" border lazy>
+    <el-table :data="tableData" lazy>
       <el-table-column prop="id" label="Id" width="60"> </el-table-column>
       <el-table-column label="Nombre" width="150">
         <template slot-scope="scope" class="flex flex-col">
