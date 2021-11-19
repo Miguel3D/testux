@@ -1,10 +1,20 @@
 <template>
   <div class="w-full flex justify-center items-center">
-    <div class="w-full max-w-screen-lg flex justify-center items-center">
+    <div
+      class="w-full max-w-screen-lg flex flex-col justify-center items-center"
+    >
       <div class="w-full mx-2 my-8 grid responsive">
         <createUser />
         <tablet class="md:mt-10 rmt" />
       </div>
+
+      <a
+        href="https://github.com/Miguel3D/testux"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="mb-2"
+        >Link del repositorio</a
+      >
     </div>
   </div>
 </template>
