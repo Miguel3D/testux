@@ -53,12 +53,12 @@
             style="margin-bottom: 10px"
             >Agregar usuario</el-button
           >
-          <el-button
+          <!-- <el-button
             @click="resetForm('form')"
             style="margin-left: 0px"
             class="w-full m-0 p-0"
             >Limpiar campos</el-button
-          >
+          > -->
         </div>
       </el-form>
     </div>

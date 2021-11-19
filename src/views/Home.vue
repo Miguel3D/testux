@@ -1,11 +1,9 @@
 <template>
   <div class="w-full flex justify-center items-center">
-    <div
-      class="w-full max-w-screen-lg flex flex-col justify-center items-center"
-    >
-      <div class="w-full mx-2 my-8 grid grid-cols-2">
-        <createUser class="max-w-sm" />
-        <tablet />
+    <div class="w-full max-w-screen-lg flex justify-center items-center">
+      <div class="w-full mx-2 my-8 grid responsive">
+        <createUser />
+        <tablet class="md:mt-10 rmt" />
       </div>
     </div>
   </div>
@@ -39,3 +37,27 @@ export default {
   },
 };
 </script>
+<style scoped>
+.responsive {
+  @apply grid grid-cols-2;
+}
+.rmt {
+  @apply mt-0;
+}
+@media (max-width: 768px) {
+  .responsive {
+    @apply grid grid-cols-1;
+  }
+  .rmt {
+    @apply mt-10;
+  }
+}
+@media (max-width: 640px) {
+  .responsive {
+    @apply grid grid-cols-1;
+  }
+  .rmt {
+    @apply mt-5;
+  }
+}
+</style>
